@@ -1,0 +1,258 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #865353;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 15px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Container (Index Page) */
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about, .best-sellers {
+    width: 48%;
+}
+
+.about h2 {
+    color: #444;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.best-sellers h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Best Sellers Section */
+.best-sellers img {
+    width: 250px; /* Ukuran seragam */
+    height: 250px; /* Ukuran seragam */
+    margin-bottom: 15px;
+    border-radius: 5px;
+    object-fit: cover; /* Menyesuaikan isi gambar agar proporsional */
+}
+
+/* Features Section */
+.karyaestetikakami {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.karyakami h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #865353;
+    font-weight: bold;
+}
+
+.karya {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.karya div {
+    background-color: #f4f4f9;
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.karya div:hover {
+    transform: scale(1.05);
+}
+
+.karya img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.karya h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Gallery Page */
+.gallery {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column; /* Mengatur agar elemen di galeri tersusun secara vertikal */
+    align-items: center;
+    text-align: center;
+}
+
+.gallery .judul {
+    margin-bottom: 30px;
+}
+
+.gallery .judul h2 {
+    font-size: 28px;
+    color: #776464;
+}
+
+.croffle-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.croffle-item {
+    width: 280px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.croffle-item:hover {
+    transform: translateY(-5px);
+}
+
+.croffle-item img {
+    width: 100%;
+    height: 200px; /* Menyamaratakan tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tetap proposional */
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.croffle-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #472929;
+}
+
+.croffle-item p {
+    font-size: 16px;
+    color: #915858;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #be8282;
+    color: #fff;
+    margin-top: 50px;
+}
+
+footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+
+/* Tablet Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .container-1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .about, .best-sellers {
+        width: 100%;
+    }
+
+    .best-sellers img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hiasan div {
+        width: 90%;
+    }
+
+    .gallery .judul h2 {
+        font-size: 24px;
+    }
+
+    .croffle-item {
+        width: 90%;
+    }
+}
+
+/* Mobile Devices (max-width: 576px) */
+@media (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .gallery .judul h2 {
+        font-size: 20px;
+    }
+
+    .croffle-item img {
+        height: 150px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
